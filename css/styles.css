@@ -33,19 +33,17 @@ hr {
 }
 
 .btn {
-  box-shadow: inset 0 1px 0 0 #d7e3fc;
-  background: linear-gradient(to bottom, #abc4ff 5%, #a2d2ff 100%);
+  outline: none;
+  border: none;
   border-radius: 8px;
-  border: 1px solid;
-  display: inline-block;
-  cursor: pointer;
-  color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
-  margin: 50px 0 50px 0;
-  padding: 6px 24px;
-  text-decoration: none;
-  text-shadow: 0 1px 0;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: linear-gradient(135deg, #abc4ff 10%, #a2d2ff 100%);
+  margin: 30px 10px 30px 10px;
 }
 .btn:hover {
   transform: scale(1.1);
@@ -77,6 +75,7 @@ header .text-content .text {
   font-size: 20px;
   color: #2c3350;
 }
+
 header .text-content .name {
   font-family: "Sacramento", cursive;
   font-size: 2.5rem;
@@ -112,26 +111,6 @@ header .text-content .job {
 }
 .text-content .job .one {
   color: #06d6a0;
-}
-
-.buttons {
-  margin: 20px 0 0 auto;
-}
-.text-content .buttons button {
-  outline: none;
-  margin: 0 10px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  padding: 8px 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  background-image: linear-gradient(135deg, #abc4ff 10%, #a2d2ff 100%);
-}
-.buttons button:hover {
-  transform: scale(1.15);
 }
 /* Media Icon */
 header .media-icons {
@@ -176,6 +155,10 @@ header .media-icons {
   text-align: center;
 }
 
+.skill-row-first .btn {
+  margin: 10px 0 0 0;
+}
+
 .web-development:hover {
   transform: scale(1.1);
 }
@@ -204,9 +187,16 @@ header .media-icons {
   font-size: 0.85rem;
 }
 
-@media screen and (min-width: 979px) and (max-width: 1110px) {
+@media screen and (min-width: 986px) and (max-width: 1110px) {
   .top-container {
     padding: 100px 0;
+  }
+
+  .left-flexbox {
+    padding: 50px 30px 20px 30px;
+    border-radius: 50px;
+    background-color: #ffdee9;
+    background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
   }
 
   .web-development {
@@ -239,6 +229,14 @@ header .media-icons {
   .top-container {
     padding: 100px 0;
   }
+
+  .left-flexbox {
+    padding: 50px 30px 20px 30px;
+    border-radius: 50px;
+    background-color: #ffdee9;
+    background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  }
+
   .web-development {
     float: left;
     margin-right: 30px;
